@@ -1,0 +1,13 @@
+class Solution {
+public:
+    string reversePrefix(string word, char ch) {
+        int a=word.find(ch);
+        int i=0;
+        while(i<a){
+            swap(word[i],word[a]);
+            i++;
+            a--;
+        }
+        return word;
+    }
+};
